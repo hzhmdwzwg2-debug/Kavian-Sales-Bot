@@ -1,0 +1,16 @@
+{
+  "name": "kavian-sales-bot",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Kavian Sales Bot starter for Telegram native Serverless",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "deploy": "npm run build && tgcloud push",
+    "status": "tgcloud status",
+    "migrate": "tgcloud migrate"
+  },
+  "devDependencies": {
+    "@tgcloud/cli": "^0.2.0"
+  }
+}
